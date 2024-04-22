@@ -1,6 +1,6 @@
 # Joomla 4 Starter project
 
-TODO: Dockerize the project with these specs:
+TODO: Dockerize the project with [these specs](https://manual.joomla.org/docs/4.4/get-started/technical-requirements/):
 - PHP 8.2
 - MySQL 8.0 +
 - Apache 2.4 + / nginx 1.18 +
@@ -9,7 +9,7 @@ TODO: Dockerize the project with these specs:
 ## Modifications
 
 The `package.json` file and the `build` folder was imported from [the official Joomla repository](https://github.com/joomla/joomla-cms).
-These are needed for compiling SCSS to CSS. Run this command to build css:
+These are needed for compiling SCSS to CSS ([more info](https://docs.joomla.org/J4.x:SCSS_and_Sass/en)). Run this command to build css:
 
 ```shell
 npm run build:css
@@ -29,6 +29,8 @@ comment line 43 out:
 ```
 
 After installation, the installation is going to be removed, so the build script won't find the folder, and will throw an error.
+
+[Joomla Coding Standards](https://developer.joomla.org/coding-standards/scss.html)
 
 A `.gitignore` file is added that is going to ignore most of the default Joomla files. As a result, this repository will
 
